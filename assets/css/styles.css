@@ -58,10 +58,11 @@ a {
   background: #e6f0ff;
 }
 
-.Hero-wrap {
+.hero {
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   background: #e6f0ff;
   height: calc(100vh - 90px);
 }
@@ -101,10 +102,6 @@ a {
   padding: 13px 16px;
   margin-left: 18px;
   border-radius: 8px;
-}
-
-.hero {
-  margin-top: 140px;
 }
 
 .hero .info {
