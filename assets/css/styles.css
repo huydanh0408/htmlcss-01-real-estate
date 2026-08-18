@@ -45,8 +45,18 @@ a {
 }
 
 /* ============== Header ============== */
-.header {
+.fixed-navbar {
+  padding-top: 26px;
+  position: sticky;
+  top: -26px;
+  z-index: 1;
+  background: #e6f0ff;
+}
+
+.Hero-wrap {
   position: relative;
+  display: flex;
+  flex-direction: column;
   background: #e6f0ff;
   height: 100vh;
 }
@@ -54,7 +64,7 @@ a {
 .nav {
   display: flex;
   align-items: center;
-  padding-top: 38px;
+  padding: 12px 0;
 }
 
 .nav ul {
