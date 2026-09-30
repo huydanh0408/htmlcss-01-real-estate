@@ -75,6 +75,40 @@
     font-weight: 500;
     color: #4f5361;
   }
+
+  .hero {
+    height: calc(100vh - 64px);
+  }
+
+  .hero-img {
+    display: none;
+  }
+
+  .hero .info {
+    width: 80%;
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  .hero .desc {
+    width: 80%;
+    margin-inline: auto;
+  }
+
+  .clients .images {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .guides .list-item {
+    flex: 1;
+    margin: 0;
+  }
+
+  .featured .list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
 }
 
 /* Tablet*/
