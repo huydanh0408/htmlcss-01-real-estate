@@ -109,6 +109,58 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
+
+  .stats .row {
+    flex-direction: column;
+  }
+  .stats .img-block {
+    order: 2;
+    width: 100%;
+    margin-top: 80px;
+  }
+
+  .stats .info {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+  }
+
+  .stats .sub-title,
+  .stats .info .desc {
+    width: 80%;
+    /* margin-inline: 0; */
+  }
+
+  .stats .info .desc {
+    margin-top: 40px;
+  }
+
+  .stats .row-qty {
+    flex-direction: row;
+  }
+
+  .stats .qty-item .qty {
+    font-size: 3.125rem;
+  }
+
+  .stats .qty-item .desc {
+    font-size: 1rem;
+  }
+
+  .subscription .image {
+    display: none;
+  }
+
+  .footer .row-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px 180px;
+    max-width: 80%;
+    margin-inline: auto;
+  }
 }
 
 /* Tablet*/
