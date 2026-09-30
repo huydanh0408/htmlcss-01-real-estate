@@ -67,7 +67,8 @@ a {
   height: calc(100vh - 90px);
 }
 
-.nav {
+.fixed-navbar .inner {
+  position: relative;
   display: flex;
   align-items: center;
   padding: 12px 0;
@@ -89,16 +90,16 @@ a {
   text-decoration: underline;
 }
 
-.nav .actions {
+.fixed-navbar .actions {
   margin-left: auto;
 }
 
-.nav .action-link {
+.fixed-navbar .action-link {
   font-size: 0.875rem;
   font-weight: 500;
   color: var(--primary-color);
 }
-.nav .action-btn {
+.fixed-navbar .action-btn {
   padding: 13px 16px;
   margin-left: 18px;
   border-radius: 8px;

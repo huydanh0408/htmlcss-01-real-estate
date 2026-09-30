@@ -93,40 +93,80 @@
     <!-- Style Css -->
     <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
+
+    <!-- Responsive Css -->
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
   </head>
 
   <body>
+    <!-- PC Header -->
     <!-- Fixed Navbar -->
-    <div class="fixed-navbar">
+    <header class="header fixed-navbar">
       <div class="content">
-        <!-- Navbar -->
-        <nav class="nav">
+        <div class="inner">
+          <!-- Tablet/Mobile Menu -->
+          <label for="menu-checkbox" class="toggle-menu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-menu preview-icon"
+            >
+              <path d="M4 5h16" />
+              <path d="M4 12h16" />
+              <path d="M4 19h16" />
+            </svg>
+          </label>
+
           <!-- Logo -->
           <a href="#">
-            <img src="./assets/img/logo.svg" alt="Besnik." />
+            <img class="logo" src="./assets/img/logo.svg" alt="Besnik." />
           </a>
-
-          <!-- Navigation -->
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#resources">Resources</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-
+          <!-- Navbar -->
+          <nav class="nav">
+            <ul id="nav-list-pc" class="nav-list-pc">
+              <li><a href="#">Home</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#resources">Resources</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li class="show-on-mobile separate"><a href="#!">Sign in</a></li>
+              <li class="show-on-mobile"><a href="#!">Sign up</a></li>
+            </ul>
+          </nav>
           <!-- Action -->
           <div class="actions">
             <a href="#!" class="action-link">Sign in</a>
             <a href="#!" class="btn action-btn">Sign up</a>
           </div>
+        </div>
+      </div>
+    </header>
+
+    <header class="mobile-header">
+      <input type="checkbox" name="checkbox" id="menu-checkbox" hidden />
+
+      <!-- Overlay -->
+      <label for="menu-checkbox" class="menu-overlay"></label>
+
+      <!-- Menu Drawer -->
+      <div class="menu-drawer">
+        <a href="#">
+          <img src="./assets/img/logo.svg" alt="Besnik." />
+        </a>
+        <nav>
+          <ul id="nav-list-mobile" class="nav-list-mobile"></ul>
         </nav>
       </div>
-    </div>
+    </header>
 
-    <main>
-      <!-- Hero  -->
-      <header class="hero">
+    <!-- <main>
+      Hero 
+      <div class="hero">
         <div class="content">
           <div class="info">
             <p class="subtitle">Welcome to Besnik Agency</p>
@@ -143,16 +183,16 @@
             class="hero-img"
           />
         </div>
-      </header>
+      </div>
 
-      <!-- Clients -->
+      Clients
       <div class="clients">
         <div class="content">
           <div class="row">
-            <!-- Logo -->
+            Logo
             <img src="./assets/img/logo.svg" alt="Besnik." />
 
-            <!-- Rating -->
+            Rating
             <div class="rating">
               <img src="./assets/img/star.svg" alt="star" />
               <img src="./assets/img/star.svg" alt="star" />
@@ -186,7 +226,7 @@
         </div>
       </div>
 
-      <!-- Guides -->
+      Guides
       <div id="services" class="guides">
         <div class="content">
           <h2 class="sub-title">How its works?</h2>
@@ -195,7 +235,7 @@
             sell - all in one place.
           </p>
 
-          <!-- Guide List -->
+          Guide List
           <ul class="list">
             <li class="list-item">
               <img class="icon" src="./assets/img/buyer.svg" alt="Buyer" />
@@ -240,7 +280,7 @@
         </div>
       </div>
 
-      <!-- Featured -->
+      Featured
       <div id="features" class="featured">
         <div class="content">
           <header>
@@ -260,9 +300,9 @@
             </div>
           </header>
 
-          <!-- List -->
+          List
           <div class="list">
-            <!-- List Item 1 -->
+            List Item 1
             <div class="item">
               <a href="#!">
                 <img
@@ -291,7 +331,7 @@
               </div>
             </div>
 
-            <!-- List Item 2 -->
+            List Item 2
             <div class="item">
               <a href="#!">
                 <img
@@ -320,7 +360,7 @@
               </div>
             </div>
 
-            <!-- List Item 3 -->
+            List Item 3
             <div class="item">
               <a href="#!">
                 <img
@@ -352,7 +392,7 @@
         </div>
       </div>
 
-      <!-- Stats -->
+      Stats
       <div id="resources" class="stats">
         <div class="content">
           <div class="row">
@@ -362,7 +402,7 @@
                 src="./assets/img/stats-img.jpg"
                 alt="You’ve found a neighborhood you love."
               />
-              <!-- Stats-Trend -->
+              Stats-Trend
               <div class="stats-trend">
                 <div class="row">
                   <strong class="value">40,000+</strong>
@@ -377,7 +417,7 @@
                 </p>
                 <div class="separate"></div>
 
-                <!-- Avatar-Block -->
+                Avatar-Block
                 <div class="avatar-block">
                   <div class="avatar-group">
                     <img
@@ -505,7 +545,7 @@
         </div>
       </div>
 
-      <!-- Subscription -->
+      Subscription
       <div id="contact" class="subscription">
         <div class="content">
           <div class="body">
@@ -524,13 +564,13 @@
           </div>
         </div>
       </div>
-    </main>
+    </main> -->
 
     <!-- Footer -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="content">
         <div class="row row-top">
-          <!-- Product column -->
+          Product column
           <div class="column">
             <h3 class="heading">Product</h3>
             <ul class="list">
@@ -541,7 +581,7 @@
             </ul>
           </div>
 
-          <!-- Resources column -->
+          Resources column
           <div class="column">
             <h3 class="heading">Resources</h3>
             <ul class="list">
@@ -552,7 +592,7 @@
             </ul>
           </div>
 
-          <!-- Company column -->
+          Company column
           <div class="column">
             <h3 class="heading">Company</h3>
             <ul class="list">
@@ -563,7 +603,7 @@
             </ul>
           </div>
 
-          <!-- Get in touch column -->
+          Get in touch column
           <div class="column">
             <h3 class="heading">Get in touch</h3>
             <p class="desc">
@@ -588,6 +628,14 @@
           <p class="copyright">Copyright 2020.com, All rights reserved.</p>
         </div>
       </div>
-    </footer>
+    </footer> -->
+
+    <script>
+      const pcNav = document.querySelector("#nav-list-pc");
+      const mobileNav = document.querySelector("#nav-list-mobile");
+
+      // Copy from PC nav -> Mobile nav
+      mobileNav.innerHTML = pcNav.innerHTML;
+    </script>
   </body>
 </html>
